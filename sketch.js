@@ -14,7 +14,7 @@ function preload() {
   wesoly = loadImage('mis.png');
   portfel = loadImage('portfel.png');
   smutny = loadImage('mis1.png');
-  myfont = loadFont('PixelifySans-Regular.ttf');
+  myfont = loadFont('PixelifySans-VariableFont_wght.ttf');
   strzalka = loadImage('strzalka.png');
 }
 
@@ -27,6 +27,7 @@ function setup() {
 function draw() {
   background(33, 158, 188);
   textAlign(CENTER, CENTER);
+  fill(0);
   text('Buy the teddy bear', 1920 / 2, 200)
    if(portfely > 500){
    image(strzalka, 1500, 800);
@@ -67,7 +68,7 @@ function mouseReleased() {
   }
   
   if(mouseX  > 1500 && mouseX < 1500 + strzalka.width && mouseY > 800 && mouseY < 800 + strzalka.height){ //kliknięcie strzałki dalej
-   window.open('https://ri-shoe.github.io/Projektowanie-CD/');
+    window.open('https://ri-shoe.github.io/Projektowanie-CD/', '_self');
    }
   
 }
